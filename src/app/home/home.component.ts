@@ -33,6 +33,5 @@ export class HomeComponent {
 
   constructor() {
     this.housingLocationList = this.housingService.getAllHousingLocations();
-    console.log('humhhum');
   }
 }
