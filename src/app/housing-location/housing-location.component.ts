@@ -8,10 +8,15 @@ import { HousingLocation } from '../housinglocation';
   standalone: true,
   imports: [],
   template: `
-    <p>
-      housing-location works!
-    </p>
-  `,
+    <section class="listing">
+      <img class="listing-photo"
+      [src]="housingLocation.photo"
+      alt="Exterior photo of {{housingLocation.name}}">
+      <h2 class="listing-heading">{{ housingLocation.name }}</h2>
+      <p class="listing-locaion">
+        {{ housingLocation.city }}, {{ housingLocation.state }}
+      </p>
+     `,
   styleUrl: './housing-location.component.css'
 })
 export class HousingLocationComponent {
